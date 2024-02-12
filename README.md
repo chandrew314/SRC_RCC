@@ -9,7 +9,7 @@ The main use of the calculator is estimating the cost group members have to pay 
 ## Hurry up and tell me how to use it--I need to go for a run
 Okay, Forrest, gosh I'll tell you how--it'll only take a minute or two.
 
-You'll need to download the argparse and numpy packages using your favorite installer. (Mine is `pip`.)
+You'll need to download the `argparse` and `numpy` packages using your favorite installer. (Mine is `pip`.)
 ```
 Usage: python RCC.py [options] race_cost_pperson n_people amount_allocated
 
