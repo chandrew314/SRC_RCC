@@ -14,11 +14,13 @@ You'll need to download the `argparse` and `numpy` packages using your favorite 
 Usage: python RCC.py [options] race_cost_pperson n_people amount_allocated
 
 Positional arguments:
+
 race_cost_pperson       base cost of signing up one person for the race--not accounting for processing fees or sales tax
 n_people                number of people (including drivers) signed up for the race
 amount_allocated        the amount of money allocated for the race by USG
 
 Optional arguments:
+
 -d, --driver_discount   discount for drivers range (0, infinity], although SRC definitely will never have the amount of money to satisfy the upper bound; default is 0 (no discount)
 -n, --n_drivers         number of drivers; default = 0
 -p, --profit_margin     amount of revenue left over from race registration from ticket sales; default is 0
