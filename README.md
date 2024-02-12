@@ -1,5 +1,5 @@
 # SRC_RCC
-Race cost calculator for the Spartan Running Club @ CWRU.
+Race cost calculator for the Spartan Running Club @ CWRU
 
 ## What do it do?
 The Race Cost Calculator (RCC) is tailored to calculate race expenses for the Spartan Running Club @ CWRU. It is mostly made for calculating Run Signup race registration as it can (relatively) accurately take into account [Run Signups's specific processing fee calculations](https://info.runsignup.com/pricing/) and [Campus Groups's Stripe processing fee of 2.9% + $0.3 per transaction](https://case.edu/studentlife/services/campusgroups/online-payments). It can also factor in a price difference between drivers and non-drivers if a driver discount is offered. Additionally, a desired profit can be specified if extra money for the club is needed for something, like merch or an extra bonding event for example. 
