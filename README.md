@@ -13,7 +13,9 @@ Usage: python3.6 findingsgRNAs.py [options] race_cost_pperson n_people amount_al
 
 Positional arguments:
 race_cost_pperson       base cost of signing up one person for the race--not accounting for processing fees or sales tax
+
 n_people                number of people (including drivers) signed up for the race
+
 amount_allocated        the amount of money allocated for the race by USG
 
 Optional arguments:
