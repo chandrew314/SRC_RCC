@@ -32,14 +32,37 @@ def race_cost(race_cost_pperson, n_people, runsignup, sales_tax):
     max_people_for_runsignup = 25
     if runsignup == True:
         j = ceildiv(n_people, max_people_for_runsignup)
+        # ##############################################
+        # print(j)
+        # ##############################################
         race_cost_transactions = []
-        for i in range(0, j):
-            if i < j - 1:
+        if n_people % max_people_for_runsignup == 0:
+            for i in range (0, j):
                 race_cost_transactions.append(race_cost_pperson * max_people_for_runsignup)
                 race_cost_transactions[i] = race_cost_transactions[i] + runsignup_processing_fee(race_cost_transactions[i]) + sales_tax
-            else:
-                race_cost_transactions.append(race_cost_pperson * (n_people % max_people_for_runsignup))
-                race_cost_transactions[i] = race_cost_transactions[i] + runsignup_processing_fee(race_cost_transactions[i]) + sales_tax
+        else:
+            for i in range(0, j):
+                # ##############################################
+                # print(i)
+                # print('what')
+                # ##############################################
+                if i < j - 1:
+                    race_cost_transactions.append(race_cost_pperson * max_people_for_runsignup)
+                    race_cost_transactions[i] = race_cost_transactions[i] + runsignup_processing_fee(race_cost_transactions[i]) + sales_tax
+                    # ##############################################
+                    # print(race_cost_transactions)
+                    # print('hi')
+                    # ##############################################
+                else:
+                    race_cost_transactions.append(race_cost_pperson * (n_people % max_people_for_runsignup))
+                    race_cost_transactions[i] = race_cost_transactions[i] + runsignup_processing_fee(race_cost_transactions[i]) + sales_tax
+        #             ##############################################
+        #             print(race_cost_transactions)
+        #             print('bye')
+        #             ##############################################
+        # ##############################################
+        # print(race_cost_transactions)
+        # ##############################################
         race_cost = sum(race_cost_transactions)
     else:
         race_cost = race_cost_pperson * n_people
